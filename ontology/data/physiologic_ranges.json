@@ -1,0 +1,144 @@
+{
+  "_metadata": {
+    "description": "Physiologic plausibility ranges for laboratory values. The 'plausible_min' and 'plausible_max' bounds represent the broadest range a value could conceivably take in a living patient (not a clinical reference range, which is much narrower). A value outside these bounds is treated as a definitive ValueFabrication.",
+    "source_note": "Bounds derived from clinical pathology references and the LOINC database. LOINC codes are real and widely used.",
+    "version": "0.1.0"
+  },
+  "labs": {
+    "sodium": {
+      "loinc": "2951-2",
+      "units": "mEq/L",
+      "reference_low": 135,
+      "reference_high": 145,
+      "plausible_min": 100,
+      "plausible_max": 200,
+      "alias": ["na", "na+", "serum sodium"]
+    },
+    "potassium": {
+      "loinc": "2823-3",
+      "units": "mEq/L",
+      "reference_low": 3.5,
+      "reference_high": 5.0,
+      "plausible_min": 1.0,
+      "plausible_max": 9.0,
+      "alias": ["k", "k+", "serum potassium"]
+    },
+    "glucose": {
+      "loinc": "2345-7",
+      "units": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 100,
+      "plausible_min": 10,
+      "plausible_max": 1500,
+      "alias": ["blood glucose", "blood sugar", "bg"]
+    },
+    "creatinine": {
+      "loinc": "2160-0",
+      "units": "mg/dL",
+      "reference_low": 0.6,
+      "reference_high": 1.3,
+      "plausible_min": 0.1,
+      "plausible_max": 30,
+      "alias": ["cr", "serum creatinine"]
+    },
+    "bun": {
+      "loinc": "3094-0",
+      "units": "mg/dL",
+      "reference_low": 7,
+      "reference_high": 20,
+      "plausible_min": 1,
+      "plausible_max": 250,
+      "alias": ["urea nitrogen", "blood urea nitrogen"]
+    },
+    "hemoglobin": {
+      "loinc": "718-7",
+      "units": "g/dL",
+      "reference_low": 12.0,
+      "reference_high": 17.5,
+      "plausible_min": 2.0,
+      "plausible_max": 25.0,
+      "alias": ["hgb", "hb"]
+    },
+    "wbc": {
+      "loinc": "6690-2",
+      "units": "10^9/L",
+      "reference_low": 4.0,
+      "reference_high": 11.0,
+      "plausible_min": 0.0,
+      "plausible_max": 500.0,
+      "alias": ["white blood cell count", "leukocyte count"]
+    },
+    "platelets": {
+      "loinc": "777-3",
+      "units": "10^9/L",
+      "reference_low": 150,
+      "reference_high": 400,
+      "plausible_min": 1,
+      "plausible_max": 3000,
+      "alias": ["platelet count", "plt"]
+    },
+    "troponin_i": {
+      "loinc": "10839-9",
+      "units": "ng/mL",
+      "reference_low": 0,
+      "reference_high": 0.04,
+      "plausible_min": 0,
+      "plausible_max": 1000,
+      "alias": ["troponin", "cardiac troponin", "tni"]
+    },
+    "lactate": {
+      "loinc": "2524-7",
+      "units": "mmol/L",
+      "reference_low": 0.5,
+      "reference_high": 2.2,
+      "plausible_min": 0,
+      "plausible_max": 30,
+      "alias": ["serum lactate", "lactic acid"]
+    },
+    "ph": {
+      "loinc": "11558-4",
+      "units": "pH",
+      "reference_low": 7.35,
+      "reference_high": 7.45,
+      "plausible_min": 6.5,
+      "plausible_max": 8.0,
+      "alias": ["arterial ph", "blood ph"]
+    },
+    "tsh": {
+      "loinc": "3016-3",
+      "units": "mIU/L",
+      "reference_low": 0.4,
+      "reference_high": 4.0,
+      "plausible_min": 0,
+      "plausible_max": 500,
+      "alias": ["thyroid stimulating hormone"]
+    },
+    "alt": {
+      "loinc": "1742-6",
+      "units": "U/L",
+      "reference_low": 7,
+      "reference_high": 56,
+      "plausible_min": 0,
+      "plausible_max": 20000,
+      "alias": ["alanine aminotransferase", "sgpt"]
+    },
+    "ast": {
+      "loinc": "1920-8",
+      "units": "U/L",
+      "reference_low": 10,
+      "reference_high": 40,
+      "plausible_min": 0,
+      "plausible_max": 20000,
+      "alias": ["aspartate aminotransferase", "sgot"]
+    },
+    "inr": {
+      "loinc": "34714-6",
+      "units": "ratio",
+      "reference_low": 0.8,
+      "reference_high": 1.2,
+      "plausible_min": 0.5,
+      "plausible_max": 20,
+      "alias": ["international normalized ratio"]
+    }
+  }
+}

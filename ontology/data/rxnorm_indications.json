@@ -1,0 +1,130 @@
+{
+  "_metadata": {
+    "description": "Curated subset of RxNorm-style drug-to-indication mappings for the CHO ForbiddenRelation axiom. This is intentionally minimal: it covers common drugs whose misuse would constitute clearly identifiable hallucinations. For production use, replace with a full RxNorm or DrugBank load.",
+    "source_note": "Indications are derived from FDA prescribing information and standard pharmacology references. UMLS CUIs are real but the full UMLS graph is not embedded.",
+    "version": "0.1.0",
+    "license": "CC-BY-4.0 for this curation; underlying drug names and indications are factual public information"
+  },
+  "drugs": {
+    "metformin": {
+      "rxcui": "6809",
+      "umls_cui": "C0025598",
+      "indications": ["type 2 diabetes mellitus", "diabetes mellitus", "polycystic ovary syndrome", "insulin resistance", "prediabetes"],
+      "drug_class": "biguanide"
+    },
+    "insulin": {
+      "rxcui": "5856",
+      "umls_cui": "C0021641",
+      "indications": ["type 1 diabetes mellitus", "type 2 diabetes mellitus", "diabetes mellitus", "diabetic ketoacidosis", "hyperglycemia"],
+      "drug_class": "antidiabetic hormone"
+    },
+    "metoprolol": {
+      "rxcui": "6918",
+      "umls_cui": "C0025859",
+      "indications": ["hypertension", "angina pectoris", "heart failure", "myocardial infarction", "atrial fibrillation"],
+      "drug_class": "beta blocker"
+    },
+    "lisinopril": {
+      "rxcui": "29046",
+      "umls_cui": "C0065374",
+      "indications": ["hypertension", "heart failure", "myocardial infarction", "diabetic nephropathy"],
+      "drug_class": "ACE inhibitor"
+    },
+    "atorvastatin": {
+      "rxcui": "83367",
+      "umls_cui": "C0286651",
+      "indications": ["hyperlipidemia", "hypercholesterolemia", "cardiovascular disease prevention", "atherosclerosis"],
+      "drug_class": "statin"
+    },
+    "warfarin": {
+      "rxcui": "11289",
+      "umls_cui": "C0043031",
+      "indications": ["atrial fibrillation", "deep vein thrombosis", "pulmonary embolism", "mechanical heart valve", "stroke prevention"],
+      "drug_class": "anticoagulant"
+    },
+    "aspirin": {
+      "rxcui": "1191",
+      "umls_cui": "C0004057",
+      "indications": ["pain", "fever", "inflammation", "myocardial infarction prevention", "stroke prevention", "cardiovascular disease prevention"],
+      "drug_class": "NSAID, antiplatelet"
+    },
+    "amoxicillin": {
+      "rxcui": "723",
+      "umls_cui": "C0002645",
+      "indications": ["bacterial infection", "otitis media", "pneumonia", "urinary tract infection", "h. pylori infection", "streptococcal pharyngitis"],
+      "drug_class": "penicillin antibiotic"
+    },
+    "furosemide": {
+      "rxcui": "4603",
+      "umls_cui": "C0016860",
+      "indications": ["heart failure", "edema", "hypertension", "pulmonary edema", "ascites"],
+      "drug_class": "loop diuretic"
+    },
+    "albuterol": {
+      "rxcui": "435",
+      "umls_cui": "C0001927",
+      "indications": ["asthma", "chronic obstructive pulmonary disease", "bronchospasm", "exercise-induced bronchoconstriction"],
+      "drug_class": "beta-2 agonist bronchodilator"
+    },
+    "prednisone": {
+      "rxcui": "8640",
+      "umls_cui": "C0032952",
+      "indications": ["autoimmune disease", "inflammation", "asthma exacerbation", "rheumatoid arthritis", "lupus", "allergic reaction"],
+      "drug_class": "corticosteroid"
+    },
+    "levothyroxine": {
+      "rxcui": "10582",
+      "umls_cui": "C0023246",
+      "indications": ["hypothyroidism", "myxedema", "thyroid hormone replacement"],
+      "drug_class": "thyroid hormone"
+    },
+    "amlodipine": {
+      "rxcui": "17767",
+      "umls_cui": "C0051696",
+      "indications": ["hypertension", "angina pectoris", "coronary artery disease"],
+      "drug_class": "calcium channel blocker"
+    },
+    "omeprazole": {
+      "rxcui": "7646",
+      "umls_cui": "C0028978",
+      "indications": ["gastroesophageal reflux disease", "peptic ulcer disease", "h. pylori infection", "zollinger-ellison syndrome", "erosive esophagitis"],
+      "drug_class": "proton pump inhibitor"
+    },
+    "ibuprofen": {
+      "rxcui": "5640",
+      "umls_cui": "C0020740",
+      "indications": ["pain", "fever", "inflammation", "rheumatoid arthritis", "osteoarthritis", "dysmenorrhea"],
+      "drug_class": "NSAID"
+    },
+    "acetaminophen": {
+      "rxcui": "161",
+      "umls_cui": "C0000970",
+      "indications": ["pain", "fever"],
+      "drug_class": "analgesic, antipyretic"
+    },
+    "ciprofloxacin": {
+      "rxcui": "2551",
+      "umls_cui": "C0008809",
+      "indications": ["bacterial infection", "urinary tract infection", "anthrax exposure", "respiratory infection", "gastrointestinal infection"],
+      "drug_class": "fluoroquinolone antibiotic"
+    },
+    "heparin": {
+      "rxcui": "5224",
+      "umls_cui": "C0019134",
+      "indications": ["deep vein thrombosis", "pulmonary embolism", "atrial fibrillation", "myocardial infarction", "anticoagulation during procedures"],
+      "drug_class": "anticoagulant"
+    },
+    "sertraline": {
+      "rxcui": "36437",
+      "umls_cui": "C0074393",
+      "indications": ["major depressive disorder", "depression", "obsessive-compulsive disorder", "panic disorder", "post-traumatic stress disorder", "social anxiety disorder"],
+      "drug_class": "SSRI"
+    },
+    "haloperidol": {
+      "rxcui": "5093",
+      "umls_cui": "C0018546",
+      "indications": ["schizophrenia", "psychosis", "tourette syndrome", "acute agitation", "delirium"],
+      "drug_class": "typical antipsychotic"
+    }
+  }
+}

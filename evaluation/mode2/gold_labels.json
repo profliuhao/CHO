@@ -1,0 +1,4279 @@
+{
+  "_metadata": {
+    "description": "Mode 2 gold-label set: synthetic CHO-axiom-targeted examples + (optional) curated MedHallu subset. The reasoner is evaluated on classification precision/recall against `expected_class`.",
+    "version": "v1",
+    "n_examples": 365,
+    "n_by_class": {
+      "ForbiddenRelation": 200,
+      "InvertedRelation": 36,
+      "ThresholdViolation": 54,
+      "ModifierOmission": 1,
+      "FabricatedEntity": 24,
+      "negative_control": 50
+    }
+  },
+  "examples": [
+    {
+      "id": "syn_forb_0000",
+      "source": "synthetic_contraindication",
+      "text": "(+/-)-noradrenaline treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0001",
+      "source": "synthetic_contraindication",
+      "text": "(+/-)-noradrenaline treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0002",
+      "source": "synthetic_contraindication",
+      "text": "12beta-hydroxydigitoxin treats amyloidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0003",
+      "source": "synthetic_contraindication",
+      "text": "12beta-hydroxydigitoxin treats atrial fibrillation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0004",
+      "source": "synthetic_contraindication",
+      "text": "Albuterol-containing product treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0005",
+      "source": "synthetic_contraindication",
+      "text": "Albuterol treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0006",
+      "source": "synthetic_contraindication",
+      "text": "3,5,3'5' tetraiodothyronine treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0007",
+      "source": "synthetic_contraindication",
+      "text": "Adrenaline-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0008",
+      "source": "synthetic_contraindication",
+      "text": "Adrenaline-containing product treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0009",
+      "source": "synthetic_contraindication",
+      "text": "Adrenaline treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0010",
+      "source": "synthetic_contraindication",
+      "text": "Adrenaline treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0011",
+      "source": "synthetic_contraindication",
+      "text": "Acetylsalicylic acid treats hematemesis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0012",
+      "source": "synthetic_contraindication",
+      "text": "Acetylsalicylic acid treats hemorrhagic disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0013",
+      "source": "synthetic_contraindication",
+      "text": "Amlodipine-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0014",
+      "source": "synthetic_contraindication",
+      "text": "Amlodipine treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0015",
+      "source": "synthetic_contraindication",
+      "text": "Aspirin (substance) treats hematemesis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0016",
+      "source": "synthetic_contraindication",
+      "text": "Aspirin (substance) treats hemorrhagic disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0017",
+      "source": "synthetic_contraindication",
+      "text": "Amlodipine (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0018",
+      "source": "synthetic_contraindication",
+      "text": "Aspirin-containing product treats hematemesis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0019",
+      "source": "synthetic_contraindication",
+      "text": "Aspirin-containing product treats hemorrhagic disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0020",
+      "source": "synthetic_contraindication",
+      "text": "Aspirin treats hematemesis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0021",
+      "source": "synthetic_contraindication",
+      "text": "Aspirin treats hemorrhagic disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0022",
+      "source": "synthetic_contraindication",
+      "text": "Atorvastatin (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0023",
+      "source": "synthetic_contraindication",
+      "text": "Atorvastatin (substance) treats liver failure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0024",
+      "source": "synthetic_contraindication",
+      "text": "Atorvastatin treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0025",
+      "source": "synthetic_contraindication",
+      "text": "Atorvastatin treats liver failure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0026",
+      "source": "synthetic_contraindication",
+      "text": "Atorvastatin-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0027",
+      "source": "synthetic_contraindication",
+      "text": "Atorvastatin-containing product treats liver failure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0028",
+      "source": "synthetic_contraindication",
+      "text": "Ceftriaxone (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0029",
+      "source": "synthetic_contraindication",
+      "text": "Ceftriaxone (substance) treats gallbladder diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0030",
+      "source": "synthetic_contraindication",
+      "text": "Azithromycin treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0031",
+      "source": "synthetic_contraindication",
+      "text": "Azithromycin treats liver diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0032",
+      "source": "synthetic_contraindication",
+      "text": "Azithromycin-containing product treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0033",
+      "source": "synthetic_contraindication",
+      "text": "Azithromycin-containing product treats liver diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0034",
+      "source": "synthetic_contraindication",
+      "text": "Ceftriaxone treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0035",
+      "source": "synthetic_contraindication",
+      "text": "Ceftriaxone treats gallbladder diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0036",
+      "source": "synthetic_contraindication",
+      "text": "Ciprofloxacin-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0037",
+      "source": "synthetic_contraindication",
+      "text": "Ceftriaxone-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0038",
+      "source": "synthetic_contraindication",
+      "text": "Ceftriaxone-containing product treats gallbladder diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0039",
+      "source": "synthetic_contraindication",
+      "text": "Ciprofloxacin treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0040",
+      "source": "synthetic_contraindication",
+      "text": "Clopidogrel treats blood coagulation disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0041",
+      "source": "synthetic_contraindication",
+      "text": "Clopidogrel treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0042",
+      "source": "synthetic_contraindication",
+      "text": "Azithromycin (substance) treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0043",
+      "source": "synthetic_contraindication",
+      "text": "Azithromycin (substance) treats liver diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0044",
+      "source": "synthetic_contraindication",
+      "text": "Clopidogrel (substance) treats blood coagulation disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0045",
+      "source": "synthetic_contraindication",
+      "text": "Clopidogrel (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0046",
+      "source": "synthetic_contraindication",
+      "text": "Ciprofloxacin (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0047",
+      "source": "synthetic_contraindication",
+      "text": "Clopidogrel-containing product treats blood coagulation disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0048",
+      "source": "synthetic_contraindication",
+      "text": "Clopidogrel-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0049",
+      "source": "synthetic_contraindication",
+      "text": "Diazepam-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0050",
+      "source": "synthetic_contraindication",
+      "text": "Diazepam-containing product treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0051",
+      "source": "synthetic_contraindication",
+      "text": "Diazepam (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0052",
+      "source": "synthetic_contraindication",
+      "text": "Diazepam (substance) treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0053",
+      "source": "synthetic_contraindication",
+      "text": "Digoxigenin-tridigitoxosid treats amyloidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0054",
+      "source": "synthetic_contraindication",
+      "text": "Digoxigenin-tridigitoxosid treats atrial fibrillation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0055",
+      "source": "synthetic_contraindication",
+      "text": "Digoxin-containing product treats amyloidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0056",
+      "source": "synthetic_contraindication",
+      "text": "Digoxin-containing product treats atrial fibrillation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0057",
+      "source": "synthetic_contraindication",
+      "text": "Digoxin (substance) treats amyloidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0058",
+      "source": "synthetic_contraindication",
+      "text": "Digoxin (substance) treats atrial fibrillation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0059",
+      "source": "synthetic_contraindication",
+      "text": "Diazepam treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0060",
+      "source": "synthetic_contraindication",
+      "text": "Diazepam treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0061",
+      "source": "synthetic_contraindication",
+      "text": "Dobutamine treats discrete subaortic stenosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0062",
+      "source": "synthetic_contraindication",
+      "text": "Dobutamine treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0063",
+      "source": "synthetic_contraindication",
+      "text": "Dobutamine (substance) treats discrete subaortic stenosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0064",
+      "source": "synthetic_contraindication",
+      "text": "Dobutamine (substance) treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0065",
+      "source": "synthetic_contraindication",
+      "text": "Dobutamine-containing product treats discrete subaortic stenosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0066",
+      "source": "synthetic_contraindication",
+      "text": "Dobutamine-containing product treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0067",
+      "source": "synthetic_contraindication",
+      "text": "Epinephrine (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0068",
+      "source": "synthetic_contraindication",
+      "text": "Epinephrine (substance) treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0069",
+      "source": "synthetic_contraindication",
+      "text": "Epinephrine-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0070",
+      "source": "synthetic_contraindication",
+      "text": "Epinephrine-containing product treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0071",
+      "source": "synthetic_contraindication",
+      "text": "Frusemide treats anuria.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0072",
+      "source": "synthetic_contraindication",
+      "text": "Frusemide treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0073",
+      "source": "synthetic_contraindication",
+      "text": "Furosemide treats anuria.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0074",
+      "source": "synthetic_contraindication",
+      "text": "Furosemide treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0075",
+      "source": "synthetic_contraindication",
+      "text": "Haloperidol treats bone marrow diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0076",
+      "source": "synthetic_contraindication",
+      "text": "Haloperidol treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0077",
+      "source": "synthetic_contraindication",
+      "text": "Fentanyl (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0078",
+      "source": "synthetic_contraindication",
+      "text": "Fentanyl (substance) treats high pressure neurological syndrome.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0079",
+      "source": "synthetic_contraindication",
+      "text": "Fentanyl treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0080",
+      "source": "synthetic_contraindication",
+      "text": "Fentanyl treats high pressure neurological syndrome.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0081",
+      "source": "synthetic_contraindication",
+      "text": "Fentanyl-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0082",
+      "source": "synthetic_contraindication",
+      "text": "Fentanyl-containing product treats high pressure neurological syndrome.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0083",
+      "source": "synthetic_contraindication",
+      "text": "Fentyl treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0084",
+      "source": "synthetic_contraindication",
+      "text": "Fentyl treats high pressure neurological syndrome.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0085",
+      "source": "synthetic_contraindication",
+      "text": "Furosemide (substance) treats anuria.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0086",
+      "source": "synthetic_contraindication",
+      "text": "Furosemide (substance) treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0087",
+      "source": "synthetic_contraindication",
+      "text": "Haloperidol-containing product treats bone marrow diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0088",
+      "source": "synthetic_contraindication",
+      "text": "Haloperidol-containing product treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0089",
+      "source": "synthetic_contraindication",
+      "text": "Furosemide-containing product treats anuria.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0090",
+      "source": "synthetic_contraindication",
+      "text": "Furosemide-containing product treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0091",
+      "source": "synthetic_contraindication",
+      "text": "Haloperidol (substance) treats bone marrow diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0092",
+      "source": "synthetic_contraindication",
+      "text": "Haloperidol (substance) treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0093",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin soluble treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0094",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin soluble treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0095",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0096",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin (substance) treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0097",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin soluble-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0098",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin soluble-containing product treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0099",
+      "source": "synthetic_contraindication",
+      "text": "Human regular insulin-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0100",
+      "source": "synthetic_contraindication",
+      "text": "Human regular insulin-containing product treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0101",
+      "source": "synthetic_contraindication",
+      "text": "Levothyroxine treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0102",
+      "source": "synthetic_contraindication",
+      "text": "Heparin-containing product treats disseminated intravascular coagulation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0103",
+      "source": "synthetic_contraindication",
+      "text": "Heparin-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0104",
+      "source": "synthetic_contraindication",
+      "text": "Heparin (substance) treats disseminated intravascular coagulation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0105",
+      "source": "synthetic_contraindication",
+      "text": "Heparin (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0106",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0107",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0108",
+      "source": "synthetic_contraindication",
+      "text": "Human regular insulin (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0109",
+      "source": "synthetic_contraindication",
+      "text": "Human regular insulin (substance) treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0110",
+      "source": "synthetic_contraindication",
+      "text": "Insulin, regular treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0111",
+      "source": "synthetic_contraindication",
+      "text": "Insulin, regular treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0112",
+      "source": "synthetic_contraindication",
+      "text": "Insulin treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0113",
+      "source": "synthetic_contraindication",
+      "text": "Insulin treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0114",
+      "source": "synthetic_contraindication",
+      "text": "Insulin, regular, human treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0115",
+      "source": "synthetic_contraindication",
+      "text": "Insulin, regular, human treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0116",
+      "source": "synthetic_contraindication",
+      "text": "Human regular insulin treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0117",
+      "source": "synthetic_contraindication",
+      "text": "Human regular insulin treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0118",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0119",
+      "source": "synthetic_contraindication",
+      "text": "Human insulin-containing product treats hypoglycemia.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0120",
+      "source": "synthetic_contraindication",
+      "text": "Levothyroxine (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0121",
+      "source": "synthetic_contraindication",
+      "text": "Levothyroxine-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0122",
+      "source": "synthetic_contraindication",
+      "text": "L-thyroxine treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0123",
+      "source": "synthetic_contraindication",
+      "text": "L-arterenol treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0124",
+      "source": "synthetic_contraindication",
+      "text": "L-arterenol treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0125",
+      "source": "synthetic_contraindication",
+      "text": "Lisinopril treats angioedema.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0126",
+      "source": "synthetic_contraindication",
+      "text": "Lisinopril treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0127",
+      "source": "synthetic_contraindication",
+      "text": "L-norepinephrine treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0128",
+      "source": "synthetic_contraindication",
+      "text": "L-norepinephrine treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0129",
+      "source": "synthetic_contraindication",
+      "text": "Lorazepam treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0130",
+      "source": "synthetic_contraindication",
+      "text": "Lorazepam treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0131",
+      "source": "synthetic_contraindication",
+      "text": "Lorazepam (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0132",
+      "source": "synthetic_contraindication",
+      "text": "Lorazepam (substance) treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0133",
+      "source": "synthetic_contraindication",
+      "text": "Losartan treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0134",
+      "source": "synthetic_contraindication",
+      "text": "Losartan treats hyperaldosteronism.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0135",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0136",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0137",
+      "source": "synthetic_contraindication",
+      "text": "L-noradrenaline treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0138",
+      "source": "synthetic_contraindication",
+      "text": "L-noradrenaline treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0139",
+      "source": "synthetic_contraindication",
+      "text": "Metformin treats diabetic ketoacidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0140",
+      "source": "synthetic_contraindication",
+      "text": "Metformin treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0141",
+      "source": "synthetic_contraindication",
+      "text": "Metoprolol treats heart failure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0142",
+      "source": "synthetic_contraindication",
+      "text": "Metoprolol treats pregnancy.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0143",
+      "source": "synthetic_contraindication",
+      "text": "Midazolam treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0144",
+      "source": "synthetic_contraindication",
+      "text": "Midazolam treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0145",
+      "source": "synthetic_contraindication",
+      "text": "Lisinopril (substance) treats angioedema.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0146",
+      "source": "synthetic_contraindication",
+      "text": "Lisinopril (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0147",
+      "source": "synthetic_contraindication",
+      "text": "Midazolam-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0148",
+      "source": "synthetic_contraindication",
+      "text": "Midazolam-containing product treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0149",
+      "source": "synthetic_contraindication",
+      "text": "Lisinopril-containing product treats angioedema.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0150",
+      "source": "synthetic_contraindication",
+      "text": "Lisinopril-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0151",
+      "source": "synthetic_contraindication",
+      "text": "Losartan (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0152",
+      "source": "synthetic_contraindication",
+      "text": "Losartan (substance) treats hyperaldosteronism.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0153",
+      "source": "synthetic_contraindication",
+      "text": "N,n-dimethylbiguanide treats diabetic ketoacidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0154",
+      "source": "synthetic_contraindication",
+      "text": "N,n-dimethylbiguanide treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0155",
+      "source": "synthetic_contraindication",
+      "text": "Noradrenaline-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0156",
+      "source": "synthetic_contraindication",
+      "text": "Noradrenaline-containing product treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0157",
+      "source": "synthetic_contraindication",
+      "text": "Losartan-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0158",
+      "source": "synthetic_contraindication",
+      "text": "Losartan-containing product treats hyperaldosteronism.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0159",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine, dl- treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0160",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine, dl- treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0161",
+      "source": "synthetic_contraindication",
+      "text": "Lorazepam-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0162",
+      "source": "synthetic_contraindication",
+      "text": "Lorazepam-containing product treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0163",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0164",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine (substance) treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0165",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0166",
+      "source": "synthetic_contraindication",
+      "text": "Norepinephrine-containing product treats hypotension.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0167",
+      "source": "synthetic_contraindication",
+      "text": "Metformin (substance) treats diabetic ketoacidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0168",
+      "source": "synthetic_contraindication",
+      "text": "Metformin (substance) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0169",
+      "source": "synthetic_contraindication",
+      "text": "Metoprolol (substance) treats heart failure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0170",
+      "source": "synthetic_contraindication",
+      "text": "Metoprolol (substance) treats pregnancy.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0171",
+      "source": "synthetic_contraindication",
+      "text": "Metformin-containing product treats diabetic ketoacidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0172",
+      "source": "synthetic_contraindication",
+      "text": "Metformin-containing product treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0173",
+      "source": "synthetic_contraindication",
+      "text": "Product containing atorvastatin (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0174",
+      "source": "synthetic_contraindication",
+      "text": "Product containing atorvastatin (medicinal product) treats liver failure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0175",
+      "source": "synthetic_contraindication",
+      "text": "Product containing aspirin (medicinal product) treats hematemesis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0176",
+      "source": "synthetic_contraindication",
+      "text": "Product containing aspirin (medicinal product) treats hemorrhagic disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0177",
+      "source": "synthetic_contraindication",
+      "text": "Product containing amlodipine (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0178",
+      "source": "synthetic_contraindication",
+      "text": "Product containing azithromycin (medicinal product) treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0179",
+      "source": "synthetic_contraindication",
+      "text": "Product containing azithromycin (medicinal product) treats liver diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0180",
+      "source": "synthetic_contraindication",
+      "text": "Product containing ciprofloxacin (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0181",
+      "source": "synthetic_contraindication",
+      "text": "Product containing clopidogrel (medicinal product) treats blood coagulation disorders.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0182",
+      "source": "synthetic_contraindication",
+      "text": "Product containing clopidogrel (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0183",
+      "source": "synthetic_contraindication",
+      "text": "Product containing ceftriaxone (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0184",
+      "source": "synthetic_contraindication",
+      "text": "Product containing ceftriaxone (medicinal product) treats gallbladder diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0185",
+      "source": "synthetic_contraindication",
+      "text": "Product containing diazepam (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0186",
+      "source": "synthetic_contraindication",
+      "text": "Product containing diazepam (medicinal product) treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0187",
+      "source": "synthetic_contraindication",
+      "text": "Product containing fentanyl (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0188",
+      "source": "synthetic_contraindication",
+      "text": "Product containing fentanyl (medicinal product) treats high pressure neurological syndrome.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0189",
+      "source": "synthetic_contraindication",
+      "text": "Product containing furosemide (medicinal product) treats anuria.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0190",
+      "source": "synthetic_contraindication",
+      "text": "Product containing furosemide (medicinal product) treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0191",
+      "source": "synthetic_contraindication",
+      "text": "Product containing dobutamine (medicinal product) treats discrete subaortic stenosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0192",
+      "source": "synthetic_contraindication",
+      "text": "Product containing dobutamine (medicinal product) treats hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0193",
+      "source": "synthetic_contraindication",
+      "text": "Product containing epinephrine (medicinal product) treats drug hypersensitivity.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0194",
+      "source": "synthetic_contraindication",
+      "text": "Product containing epinephrine (medicinal product) treats glaucoma, angle-closure.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0195",
+      "source": "synthetic_contraindication",
+      "text": "Product containing digoxin (medicinal product) treats amyloidosis.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0196",
+      "source": "synthetic_contraindication",
+      "text": "Product containing digoxin (medicinal product) treats atrial fibrillation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0197",
+      "source": "synthetic_contraindication",
+      "text": "Product containing haloperidol (medicinal product) treats bone marrow diseases.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0198",
+      "source": "synthetic_contraindication",
+      "text": "Product containing haloperidol (medicinal product) treats coma.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_forb_0199",
+      "source": "synthetic_contraindication",
+      "text": "Product containing heparin (medicinal product) treats disseminated intravascular coagulation.",
+      "expected_class": "ForbiddenRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "forbidden_relation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_inv_0000",
+      "source": "synthetic_inversion",
+      "text": "Hypoglycemia causes insulin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Insulin causes hypoglycemia."
+    },
+    {
+      "id": "syn_inv_0001",
+      "source": "synthetic_inversion",
+      "text": "Bleeding causes warfarin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Warfarin causes bleeding."
+    },
+    {
+      "id": "syn_inv_0002",
+      "source": "synthetic_inversion",
+      "text": "Bleeding causes heparin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Heparin causes bleeding."
+    },
+    {
+      "id": "syn_inv_0003",
+      "source": "synthetic_inversion",
+      "text": "Bleeding causes aspirin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Aspirin causes bleeding."
+    },
+    {
+      "id": "syn_inv_0004",
+      "source": "synthetic_inversion",
+      "text": "Hypokalemia causes furosemide.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Furosemide causes hypokalemia."
+    },
+    {
+      "id": "syn_inv_0005",
+      "source": "synthetic_inversion",
+      "text": "Dehydration causes furosemide.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Furosemide causes dehydration."
+    },
+    {
+      "id": "syn_inv_0006",
+      "source": "synthetic_inversion",
+      "text": "Hyperglycemia causes prednisone.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Prednisone causes hyperglycemia."
+    },
+    {
+      "id": "syn_inv_0007",
+      "source": "synthetic_inversion",
+      "text": "Edema causes amlodipine.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Amlodipine causes edema."
+    },
+    {
+      "id": "syn_inv_0008",
+      "source": "synthetic_inversion",
+      "text": "Cough causes lisinopril.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Lisinopril causes cough."
+    },
+    {
+      "id": "syn_inv_0009",
+      "source": "synthetic_inversion",
+      "text": "Lactic acidosis causes metformin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Metformin causes lactic acidosis."
+    },
+    {
+      "id": "syn_inv_0010",
+      "source": "synthetic_inversion",
+      "text": "Elevated troponin causes myocardial infarction.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Myocardial infarction causes elevated troponin."
+    },
+    {
+      "id": "syn_inv_0011",
+      "source": "synthetic_inversion",
+      "text": "Chest pain causes myocardial infarction.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Myocardial infarction causes chest pain."
+    },
+    {
+      "id": "syn_inv_0012",
+      "source": "synthetic_inversion",
+      "text": "Edema causes heart failure.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Heart failure causes edema."
+    },
+    {
+      "id": "syn_inv_0013",
+      "source": "synthetic_inversion",
+      "text": "Elevated lactate causes sepsis.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Sepsis causes elevated lactate."
+    },
+    {
+      "id": "syn_inv_0014",
+      "source": "synthetic_inversion",
+      "text": "Hyperglycemia causes type 2 diabetes mellitus.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Type 2 diabetes mellitus causes hyperglycemia."
+    },
+    {
+      "id": "syn_inv_0015",
+      "source": "synthetic_inversion",
+      "text": "Fatigue causes hypothyroidism.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Hypothyroidism causes fatigue."
+    },
+    {
+      "id": "syn_inv_0016",
+      "source": "synthetic_inversion",
+      "text": "Fatigue causes anemia.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Anemia causes fatigue."
+    },
+    {
+      "id": "syn_inv_0017",
+      "source": "synthetic_inversion",
+      "text": "Fever causes pneumonia.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Pneumonia causes fever."
+    },
+    {
+      "id": "syn_inv_0018",
+      "source": "synthetic_inversion",
+      "text": "Wheezing causes asthma.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Asthma causes wheezing."
+    },
+    {
+      "id": "syn_inv_0019",
+      "source": "synthetic_inversion",
+      "text": "Elevated creatinine causes acute kidney injury.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Acute kidney injury causes elevated creatinine."
+    },
+    {
+      "id": "syn_inv2_0000",
+      "source": "synthetic_inversion_extended",
+      "text": "Respiratory depression causes opioid.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Opioid causes respiratory depression."
+    },
+    {
+      "id": "syn_inv2_0001",
+      "source": "synthetic_inversion_extended",
+      "text": "Myopathy causes statin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Statin causes myopathy."
+    },
+    {
+      "id": "syn_inv2_0002",
+      "source": "synthetic_inversion_extended",
+      "text": "Serotonin syndrome causes ssri.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Ssri causes serotonin syndrome."
+    },
+    {
+      "id": "syn_inv2_0003",
+      "source": "synthetic_inversion_extended",
+      "text": "Nephrotoxicity causes cisplatin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Cisplatin causes nephrotoxicity."
+    },
+    {
+      "id": "syn_inv2_0004",
+      "source": "synthetic_inversion_extended",
+      "text": "Red man syndrome causes vancomycin.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Vancomycin causes red man syndrome."
+    },
+    {
+      "id": "syn_inv2_0005",
+      "source": "synthetic_inversion_extended",
+      "text": "Pulmonary fibrosis causes amiodarone.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Amiodarone causes pulmonary fibrosis."
+    },
+    {
+      "id": "syn_inv2_0006",
+      "source": "synthetic_inversion_extended",
+      "text": "Anion gap acidosis causes diabetic ketoacidosis.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Diabetic ketoacidosis causes anion gap acidosis."
+    },
+    {
+      "id": "syn_inv2_0007",
+      "source": "synthetic_inversion_extended",
+      "text": "Tachypnea causes pulmonary embolism.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Pulmonary embolism causes tachypnea."
+    },
+    {
+      "id": "syn_inv2_0008",
+      "source": "synthetic_inversion_extended",
+      "text": "Decreased breath sounds causes pneumothorax.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Pneumothorax causes decreased breath sounds."
+    },
+    {
+      "id": "syn_inv2_0009",
+      "source": "synthetic_inversion_extended",
+      "text": "Peaked t waves causes hyperkalemia.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Hyperkalemia causes peaked t waves."
+    },
+    {
+      "id": "syn_inv2_0010",
+      "source": "synthetic_inversion_extended",
+      "text": "Tetany causes hypocalcemia.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Hypocalcemia causes tetany."
+    },
+    {
+      "id": "syn_inv2_0011",
+      "source": "synthetic_inversion_extended",
+      "text": "Hypotension causes addisonian crisis.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Addisonian crisis causes hypotension."
+    },
+    {
+      "id": "syn_inv2_0012",
+      "source": "synthetic_inversion_extended",
+      "text": "Bradycardia causes hypothyroidism.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Hypothyroidism causes bradycardia."
+    },
+    {
+      "id": "syn_inv2_0013",
+      "source": "synthetic_inversion_extended",
+      "text": "Moon facies causes cushing's syndrome.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Cushing's syndrome causes moon facies."
+    },
+    {
+      "id": "syn_inv2_0014",
+      "source": "synthetic_inversion_extended",
+      "text": "Elevated bun causes renal failure.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Renal failure causes elevated bun."
+    },
+    {
+      "id": "syn_inv2_0015",
+      "source": "synthetic_inversion_extended",
+      "text": "Elevated bilirubin causes hemolysis.",
+      "expected_class": "InvertedRelation",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "inverted_relation",
+      "is_hallucination": true,
+      "underlying_correct": "Hemolysis causes elevated bilirubin."
+    },
+    {
+      "id": "syn_thr_0000",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's sodium was 301.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0001",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's sodium was 50.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0002",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's potassium was 14.5 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0003",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's potassium was 0.5 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0004",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's glucose was 2251.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0005",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's glucose was 5.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0006",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's creatinine was 46.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0007",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's creatinine was 0.05 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0008",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's bun was 376.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0009",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's bun was 0.5 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0010",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's hemoglobin was 38.5 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0011",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's hemoglobin was 1.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0012",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's wbc was 751.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0013",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's platelets was 4501.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0014",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's platelets was 0.5 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0015",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's troponin_i was 1501.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0016",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's lactate was 46.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0017",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's ph was 13.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0018",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's ph was 3.25 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0019",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's tsh was 751.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0020",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's alt was 30001.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0021",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's ast was 30001.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0022",
+      "source": "synthetic_threshold_high",
+      "text": "Patient's inr was 31.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr_0023",
+      "source": "synthetic_threshold_low",
+      "text": "Patient's inr was 0.25 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0000",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Sodium measured 405 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0001",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed sodium of 820 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0002",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Potassium measured 23.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0003",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed potassium of 56.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0004",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Glucose measured 3005 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0005",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed glucose of 6020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0006",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Creatinine measured 65 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0007",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed creatinine of 140 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0008",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Bun measured 505 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0009",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed bun of 1020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0010",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Hemoglobin measured 55.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0011",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed hemoglobin of 120.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0012",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Wbc measured 1005.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0013",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed wbc of 2020.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0014",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Platelets measured 6005 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0015",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed platelets of 12020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0016",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Troponin_i measured 2005 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0017",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed troponin_i of 4020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0018",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lactate measured 65 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0019",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed lactate of 140 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0020",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Ph measured 21.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0021",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed ph of 52.0 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0022",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Tsh measured 1005 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0023",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed tsh of 2020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0024",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Alt measured 40005 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0025",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed alt of 80020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0026",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Ast measured 40005 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0027",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed ast of 80020 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0028",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Inr measured 45 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_thr2_0029",
+      "source": "synthetic_threshold_high_extra",
+      "text": "Lab results showed inr of 100 .",
+      "expected_class": "ThresholdViolation",
+      "expected_harm_tiers": [
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "threshold_violation",
+      "is_hallucination": true
+    },
+    {
+      "id": "syn_mod_0001",
+      "source": "synthetic_negation",
+      "text": "Patient has fever.",
+      "expected_class": "ModifierOmission",
+      "expected_harm_tiers": [
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "modifier_omission",
+      "is_hallucination": true,
+      "underlying_correct": "Patient has no fever.",
+      "review_status": "single_text_unevaluable"
+    },
+    {
+      "id": "syn_fab_drug_0000",
+      "source": "synthetic_fake_drug",
+      "text": "Dipenazol treats hypertension.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "dipenazol"
+    },
+    {
+      "id": "syn_fab_drug_0001",
+      "source": "synthetic_fake_drug",
+      "text": "Vorthamine treats atrial fibrillation.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "vorthamine"
+    },
+    {
+      "id": "syn_fab_drug_0002",
+      "source": "synthetic_fake_drug",
+      "text": "Benazoquine treats type 2 diabetes mellitus.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "benazoquine"
+    },
+    {
+      "id": "syn_fab_drug_0003",
+      "source": "synthetic_fake_drug",
+      "text": "Lormetacin treats rheumatoid arthritis.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "lormetacin"
+    },
+    {
+      "id": "syn_fab_drug_0004",
+      "source": "synthetic_fake_drug",
+      "text": "Kelvostatin treats hypercholesterolemia.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "kelvostatin"
+    },
+    {
+      "id": "syn_fab_drug_0005",
+      "source": "synthetic_fake_drug",
+      "text": "Flexotinib treats non-small cell lung cancer.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "flexotinib"
+    },
+    {
+      "id": "syn_fab_drug_0006",
+      "source": "synthetic_fake_drug",
+      "text": "Zalmotrexate treats psoriasis.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "zalmotrexate"
+    },
+    {
+      "id": "syn_fab_drug_0007",
+      "source": "synthetic_fake_drug",
+      "text": "Epicortin treats asthma.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "epicortin"
+    },
+    {
+      "id": "syn_fab_cond_0008",
+      "source": "synthetic_fake_condition",
+      "text": "Amoxicillin treats hyperthalmic syndrome.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "hyperthalmic syndrome"
+    },
+    {
+      "id": "syn_fab_cond_0009",
+      "source": "synthetic_fake_condition",
+      "text": "Metformin treats Krenner-Wells disease.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "Krenner-Wells disease"
+    },
+    {
+      "id": "syn_fab_cond_0010",
+      "source": "synthetic_fake_condition",
+      "text": "Aspirin treats endopulmonary necrosis.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "endopulmonary necrosis"
+    },
+    {
+      "id": "syn_fab_cond_0011",
+      "source": "synthetic_fake_condition",
+      "text": "Furosemide treats lactimic acidosis.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "lactimic acidosis"
+    },
+    {
+      "id": "syn_fab_cond_0012",
+      "source": "synthetic_fake_condition",
+      "text": "Warfarin treats calcinemic shock.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "calcinemic shock"
+    },
+    {
+      "id": "syn_fab_cond_0013",
+      "source": "synthetic_fake_condition",
+      "text": "Prednisone treats myelodysplastic vasculopathy syndrome.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "myelodysplastic vasculopathy syndrome"
+    },
+    {
+      "id": "syn_fab_lab_0014",
+      "source": "synthetic_fake_lab",
+      "text": "Patient's zorinase was 8.4 U/L.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "zorinase"
+    },
+    {
+      "id": "syn_fab_lab_0015",
+      "source": "synthetic_fake_lab",
+      "text": "Patient's kalogenase was 142.0 ng/mL.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "kalogenase"
+    },
+    {
+      "id": "syn_fab_lab_0016",
+      "source": "synthetic_fake_lab",
+      "text": "Patient's trophenin-X was 0.32 mg/dL.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "trophenin-X"
+    },
+    {
+      "id": "syn_fab_lab_0017",
+      "source": "synthetic_fake_lab",
+      "text": "Patient's cardiopeptide-3 was 56.0 pg/mL.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "cardiopeptide-3"
+    },
+    {
+      "id": "syn_fab_lab_0018",
+      "source": "synthetic_fake_lab",
+      "text": "Patient's hemoxidase was 0.07 mmol/L.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "hemoxidase"
+    },
+    {
+      "id": "syn_fab_proc_0019",
+      "source": "synthetic_fake_procedure",
+      "text": "The patient underwent transverse splenotomy without complication.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "transverse splenotomy"
+    },
+    {
+      "id": "syn_fab_proc_0020",
+      "source": "synthetic_fake_procedure",
+      "text": "The patient underwent endoscopic auriculogram without complication.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "endoscopic auriculogram"
+    },
+    {
+      "id": "syn_fab_proc_0021",
+      "source": "synthetic_fake_procedure",
+      "text": "The patient underwent vascular metaplasty without complication.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "vascular metaplasty"
+    },
+    {
+      "id": "syn_fab_proc_0022",
+      "source": "synthetic_fake_procedure",
+      "text": "The patient underwent laparoscopic neuropexy without complication.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "laparoscopic neuropexy"
+    },
+    {
+      "id": "syn_fab_proc_0023",
+      "source": "synthetic_fake_procedure",
+      "text": "The patient underwent cardiopulmonary debridement without complication.",
+      "expected_class": "FabricatedEntity",
+      "expected_harm_tiers": [
+        "T2_Misleading",
+        "T3_Actionable",
+        "T4_LifeThreatening"
+      ],
+      "expected_evidence_kind": "fabricated_entity",
+      "is_hallucination": true,
+      "fabricated_term": "cardiopulmonary debridement"
+    },
+    {
+      "id": "neg_treats_0000",
+      "source": "synthetic_correct_indication",
+      "text": "Metformin treats type 2 diabetes mellitus.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0001",
+      "source": "synthetic_correct_indication",
+      "text": "Lisinopril treats hypertension.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0002",
+      "source": "synthetic_correct_indication",
+      "text": "Atorvastatin treats hypercholesterolemia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0003",
+      "source": "synthetic_correct_indication",
+      "text": "Metoprolol treats hypertension.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0004",
+      "source": "synthetic_correct_indication",
+      "text": "Furosemide treats heart failure.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0005",
+      "source": "synthetic_correct_indication",
+      "text": "Warfarin treats atrial fibrillation.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0006",
+      "source": "synthetic_correct_indication",
+      "text": "Insulin treats type 1 diabetes mellitus.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0007",
+      "source": "synthetic_correct_indication",
+      "text": "Aspirin treats myocardial infarction.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0008",
+      "source": "synthetic_correct_indication",
+      "text": "Heparin treats deep vein thrombosis.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0009",
+      "source": "synthetic_correct_indication",
+      "text": "Prednisone treats rheumatoid arthritis.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0010",
+      "source": "synthetic_correct_indication",
+      "text": "Amlodipine treats hypertension.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0011",
+      "source": "synthetic_correct_indication",
+      "text": "Losartan treats hypertension.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0012",
+      "source": "synthetic_correct_indication",
+      "text": "Simvastatin treats hypercholesterolemia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0013",
+      "source": "synthetic_correct_indication",
+      "text": "Atenolol treats hypertension.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0014",
+      "source": "synthetic_correct_indication",
+      "text": "Hydrochlorothiazide treats hypertension.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0015",
+      "source": "synthetic_correct_indication",
+      "text": "Spironolactone treats heart failure.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0016",
+      "source": "synthetic_correct_indication",
+      "text": "Acetaminophen treats fever.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0017",
+      "source": "synthetic_correct_indication",
+      "text": "Ibuprofen treats pain.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0018",
+      "source": "synthetic_correct_indication",
+      "text": "Amoxicillin treats bacterial infection.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_treats_0019",
+      "source": "synthetic_correct_indication",
+      "text": "Ceftriaxone treats pneumonia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0020",
+      "source": "synthetic_correct_causal",
+      "text": "Insulin causes hypoglycemia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0021",
+      "source": "synthetic_correct_causal",
+      "text": "Myocardial infarction causes elevated troponin.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0022",
+      "source": "synthetic_correct_causal",
+      "text": "Sepsis causes elevated lactate.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0023",
+      "source": "synthetic_correct_causal",
+      "text": "Heart failure causes edema.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0024",
+      "source": "synthetic_correct_causal",
+      "text": "Pneumonia causes fever.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0025",
+      "source": "synthetic_correct_causal",
+      "text": "Warfarin causes bleeding.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0026",
+      "source": "synthetic_correct_causal",
+      "text": "Furosemide causes hypokalemia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0027",
+      "source": "synthetic_correct_causal",
+      "text": "Hypothyroidism causes fatigue.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0028",
+      "source": "synthetic_correct_causal",
+      "text": "Anemia causes fatigue.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0029",
+      "source": "synthetic_correct_causal",
+      "text": "Asthma causes wheezing.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0030",
+      "source": "synthetic_correct_causal",
+      "text": "Acute kidney injury causes elevated creatinine.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0031",
+      "source": "synthetic_correct_causal",
+      "text": "Type 2 diabetes mellitus causes hyperglycemia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0032",
+      "source": "synthetic_correct_causal",
+      "text": "Prednisone causes hyperglycemia.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0033",
+      "source": "synthetic_correct_causal",
+      "text": "Lisinopril causes cough.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_causes_0034",
+      "source": "synthetic_correct_causal",
+      "text": "Aspirin causes bleeding.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0035",
+      "source": "synthetic_correct_lab",
+      "text": "Patient's potassium was 4.0 mEq/L.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0036",
+      "source": "synthetic_correct_lab",
+      "text": "Patient's sodium was 140 mEq/L.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0037",
+      "source": "synthetic_correct_lab",
+      "text": "Glucose 95 mg/dL.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0038",
+      "source": "synthetic_correct_lab",
+      "text": "Creatinine 1.0 mg/dL.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0039",
+      "source": "synthetic_correct_lab",
+      "text": "Hemoglobin was 14.0 g/dL.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0040",
+      "source": "synthetic_correct_lab",
+      "text": "Patient's BUN was 12 mg/dL.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_lab_0041",
+      "source": "synthetic_correct_lab",
+      "text": "Lactate 1.2 mmol/L.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0042",
+      "source": "synthetic_correct_mechanism",
+      "text": "Insulin lowers blood glucose by promoting cellular uptake.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0043",
+      "source": "synthetic_correct_mechanism",
+      "text": "ACE inhibitors block conversion of angiotensin I to angiotensin II.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0044",
+      "source": "synthetic_correct_mechanism",
+      "text": "Beta blockers reduce heart rate by antagonizing beta-1 receptors.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0045",
+      "source": "synthetic_correct_mechanism",
+      "text": "Aspirin irreversibly inhibits cyclooxygenase.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0046",
+      "source": "synthetic_correct_mechanism",
+      "text": "Furosemide inhibits sodium-potassium-chloride cotransport in the loop of Henle.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0047",
+      "source": "synthetic_correct_mechanism",
+      "text": "Warfarin inhibits vitamin K epoxide reductase.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0048",
+      "source": "synthetic_correct_mechanism",
+      "text": "Statins inhibit HMG-CoA reductase.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    },
+    {
+      "id": "neg_mech_0049",
+      "source": "synthetic_correct_mechanism",
+      "text": "Heparin enhances the activity of antithrombin III.",
+      "expected_class": null,
+      "expected_harm_tiers": [],
+      "expected_evidence_kind": null,
+      "is_hallucination": false
+    }
+  ]
+}

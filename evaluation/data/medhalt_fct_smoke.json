@@ -1,0 +1,218 @@
+[
+  {
+    "qid": "smoke-001",
+    "question": "Which medication is first-line for type 2 diabetes mellitus?",
+    "options": ["metformin", "warfarin", "haloperidol", "amoxicillin"],
+    "correct_index": 0,
+    "proposed_answer": "metformin",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-002",
+    "question": "Which medication is first-line for type 2 diabetes mellitus?",
+    "options": ["metformin", "warfarin", "haloperidol", "amoxicillin"],
+    "correct_index": 0,
+    "proposed_answer": "haloperidol",
+    "is_correct": false,
+    "_cho_class_expected": "ForbiddenRelation"
+  },
+  {
+    "qid": "smoke-003",
+    "question": "What is appropriate first-line treatment for hypertension?",
+    "options": ["lisinopril", "insulin", "albuterol", "haloperidol"],
+    "correct_index": 0,
+    "proposed_answer": "lisinopril",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-004",
+    "question": "What is appropriate first-line treatment for hypertension?",
+    "options": ["lisinopril", "insulin", "albuterol", "haloperidol"],
+    "correct_index": 0,
+    "proposed_answer": "insulin",
+    "is_correct": false,
+    "_cho_class_expected": "ForbiddenRelation"
+  },
+  {
+    "qid": "smoke-005",
+    "question": "Which medication treats schizophrenia?",
+    "options": ["haloperidol", "metformin", "atorvastatin", "amoxicillin"],
+    "correct_index": 0,
+    "proposed_answer": "haloperidol",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-006",
+    "question": "Which medication treats schizophrenia?",
+    "options": ["haloperidol", "metformin", "atorvastatin", "amoxicillin"],
+    "correct_index": 0,
+    "proposed_answer": "metformin treats schizophrenia",
+    "is_correct": false,
+    "_cho_class_expected": "ForbiddenRelation"
+  },
+  {
+    "qid": "smoke-007",
+    "question": "A patient presents with chest pain. Initial workup shows what?",
+    "options": ["elevated troponin", "elevated TSH", "elevated BUN", "low platelets"],
+    "correct_index": 0,
+    "proposed_answer": "elevated troponin",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-008",
+    "question": "Causal relationship: insulin and hypoglycemia.",
+    "options": ["insulin causes hypoglycemia", "hypoglycemia causes insulin", "no relation", "both prevent each other"],
+    "correct_index": 0,
+    "proposed_answer": "insulin causes hypoglycemia",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-009",
+    "question": "Causal relationship: insulin and hypoglycemia.",
+    "options": ["insulin causes hypoglycemia", "hypoglycemia causes insulin", "no relation", "both prevent each other"],
+    "correct_index": 0,
+    "proposed_answer": "hypoglycemia causes insulin",
+    "is_correct": false,
+    "_cho_class_expected": "InvertedRelation"
+  },
+  {
+    "qid": "smoke-010",
+    "question": "Causal relationship: warfarin and bleeding.",
+    "options": ["warfarin causes bleeding", "bleeding causes warfarin", "unrelated", "warfarin prevents bleeding"],
+    "correct_index": 0,
+    "proposed_answer": "warfarin causes bleeding",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-011",
+    "question": "Causal relationship: warfarin and bleeding.",
+    "options": ["warfarin causes bleeding", "bleeding causes warfarin", "unrelated", "warfarin prevents bleeding"],
+    "correct_index": 0,
+    "proposed_answer": "bleeding causes warfarin",
+    "is_correct": false,
+    "_cho_class_expected": "InvertedRelation"
+  },
+  {
+    "qid": "smoke-012",
+    "question": "A normal serum potassium level is approximately what?",
+    "options": ["potassium 4.0 mEq/L", "potassium 25 mEq/L", "potassium 0.1 mEq/L", "potassium 100 mEq/L"],
+    "correct_index": 0,
+    "proposed_answer": "potassium 4.0 mEq/L",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-013",
+    "question": "A normal serum potassium level is approximately what?",
+    "options": ["potassium 4.0 mEq/L", "potassium 25 mEq/L", "potassium 0.1 mEq/L", "potassium 100 mEq/L"],
+    "correct_index": 0,
+    "proposed_answer": "potassium 25 mEq/L",
+    "is_correct": false,
+    "_cho_class_expected": "ThresholdViolation"
+  },
+  {
+    "qid": "smoke-014",
+    "question": "What blood pH is incompatible with life?",
+    "options": ["pH 7.40", "pH 9.5", "pH 7.35", "pH 7.45"],
+    "correct_index": 1,
+    "proposed_answer": "pH 9.5",
+    "is_correct": true,
+    "_cho_class_expected": "ThresholdViolation"
+  },
+  {
+    "qid": "smoke-015",
+    "question": "Which serum sodium is impossible in a living patient?",
+    "options": ["sodium 140 mEq/L", "sodium 250 mEq/L", "sodium 138 mEq/L", "sodium 145 mEq/L"],
+    "correct_index": 1,
+    "proposed_answer": "sodium 250 mEq/L",
+    "is_correct": true,
+    "_cho_class_expected": "ThresholdViolation"
+  },
+  {
+    "qid": "smoke-016",
+    "question": "Glucose value during severe DKA can be approximately what?",
+    "options": ["glucose 800 mg/dL", "glucose 50000 mg/dL", "glucose 90 mg/dL", "glucose 100 mg/dL"],
+    "correct_index": 0,
+    "proposed_answer": "glucose 800 mg/dL",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-017",
+    "question": "Glucose value during severe DKA can be approximately what?",
+    "options": ["glucose 800 mg/dL", "glucose 50000 mg/dL", "glucose 90 mg/dL", "glucose 100 mg/dL"],
+    "correct_index": 0,
+    "proposed_answer": "glucose 50000 mg/dL",
+    "is_correct": false,
+    "_cho_class_expected": "ThresholdViolation"
+  },
+  {
+    "qid": "smoke-018",
+    "question": "Which antibiotic is appropriate for streptococcal pharyngitis?",
+    "options": ["amoxicillin", "metformin", "warfarin", "albuterol"],
+    "correct_index": 0,
+    "proposed_answer": "amoxicillin",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-019",
+    "question": "Which antibiotic is appropriate for streptococcal pharyngitis?",
+    "options": ["amoxicillin", "metformin", "warfarin", "albuterol"],
+    "correct_index": 0,
+    "proposed_answer": "warfarin treats streptococcal pharyngitis",
+    "is_correct": false,
+    "_cho_class_expected": "ForbiddenRelation"
+  },
+  {
+    "qid": "smoke-020",
+    "question": "Which medication is given for asthma exacerbation?",
+    "options": ["albuterol", "atorvastatin", "metformin", "warfarin"],
+    "correct_index": 0,
+    "proposed_answer": "albuterol",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-021",
+    "question": "Which medication is given for asthma exacerbation?",
+    "options": ["albuterol", "atorvastatin", "metformin", "warfarin"],
+    "correct_index": 0,
+    "proposed_answer": "atorvastatin treats asthma",
+    "is_correct": false,
+    "_cho_class_expected": "ForbiddenRelation"
+  },
+  {
+    "qid": "smoke-022",
+    "question": "Which medication treats hypothyroidism?",
+    "options": ["levothyroxine", "metformin", "haloperidol", "warfarin"],
+    "correct_index": 0,
+    "proposed_answer": "levothyroxine",
+    "is_correct": true,
+    "_cho_class_expected": "no_hallucination"
+  },
+  {
+    "qid": "smoke-023",
+    "question": "Which medication treats hypothyroidism?",
+    "options": ["levothyroxine", "metformin", "haloperidol", "warfarin"],
+    "correct_index": 0,
+    "proposed_answer": "haloperidol treats hypothyroidism",
+    "is_correct": false,
+    "_cho_class_expected": "ForbiddenRelation"
+  },
+  {
+    "qid": "smoke-024",
+    "question": "Causal relationship: heart failure and edema.",
+    "options": ["heart failure causes edema", "edema causes heart failure", "no causal link", "both unrelated"],
+    "correct_index": 0,
+    "proposed_answer": "edema causes heart failure",
+    "is_correct": false,
+    "_cho_class_expected": "InvertedRelation"
+  }
+]

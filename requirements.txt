@@ -1,0 +1,12 @@
+# Ontology + reasoner
+owlready2>=0.46
+rdflib>=7.0
+
+# Benchmark loaders (MedHallu, Med-HALT FCT)
+datasets>=2.14
+
+# Mode 3: LLM auditor (any OpenAI-compatible endpoint)
+openai>=1.40
+
+# Mode 3: standalone MCP server (optional — only needed if running mcp_server/server.py)
+mcp[cli]>=1.0

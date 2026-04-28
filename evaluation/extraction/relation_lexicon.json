@@ -1,0 +1,700 @@
+{
+  "_metadata": {
+    "description": "Mechanism-predicate lexicon for CHO claim extraction. Curated canonical predicates + surface forms + inverse mappings + optional UMLS RELA cross-references.",
+    "version": "v1",
+    "n_predicates": 51
+  },
+  "predicates": {
+    "treats": {
+      "surface_forms": [
+        "treats",
+        "is used to treat",
+        "is indicated for",
+        "is prescribed for",
+        "is given for",
+        "is the treatment for",
+        "manages",
+        "controls",
+        "alleviates"
+      ],
+      "inverse": "treated_by",
+      "category": "therapeutic",
+      "umls_rela_hints": [
+        "may_treat",
+        "treats",
+        "therapeutic_class_of"
+      ],
+      "umls_rela_observed": []
+    },
+    "treated_by": {
+      "surface_forms": [
+        "is treated with",
+        "is treated by",
+        "is managed with",
+        "responds to treatment with",
+        "improves with"
+      ],
+      "inverse": "treats",
+      "category": "therapeutic",
+      "umls_rela_hints": [
+        "may_be_treated_by"
+      ],
+      "umls_rela_observed": [
+        "may_be_treated_by"
+      ]
+    },
+    "contraindicated_in": {
+      "surface_forms": [
+        "is contraindicated in",
+        "should not be given in",
+        "must be avoided in",
+        "is not recommended in"
+      ],
+      "inverse": null,
+      "category": "therapeutic",
+      "umls_rela_hints": [
+        "contraindicated_with_disease",
+        "ci_with"
+      ],
+      "umls_rela_observed": []
+    },
+    "indicated_for": {
+      "surface_forms": [
+        "is indicated for",
+        "has indication for",
+        "is approved for",
+        "is licensed for"
+      ],
+      "inverse": null,
+      "category": "therapeutic",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "causes": {
+      "surface_forms": [
+        "causes",
+        "leads to",
+        "results in",
+        "produces",
+        "gives rise to",
+        "brings about",
+        "triggers"
+      ],
+      "inverse": "caused_by",
+      "category": "causal",
+      "umls_rela_hints": [
+        "cause_of",
+        "may_be_caused_by",
+        "induces"
+      ],
+      "umls_rela_observed": [
+        "cause_of"
+      ]
+    },
+    "caused_by": {
+      "surface_forms": [
+        "is caused by",
+        "is due to",
+        "results from",
+        "is the result of",
+        "is secondary to"
+      ],
+      "inverse": "causes",
+      "category": "causal",
+      "umls_rela_hints": [
+        "caused_by",
+        "due_to"
+      ],
+      "umls_rela_observed": []
+    },
+    "prevents": {
+      "surface_forms": [
+        "prevents",
+        "protects against",
+        "reduces the risk of",
+        "decreases the incidence of"
+      ],
+      "inverse": null,
+      "category": "causal",
+      "umls_rela_hints": [
+        "may_prevent",
+        "prevents"
+      ],
+      "umls_rela_observed": []
+    },
+    "predisposes_to": {
+      "surface_forms": [
+        "predisposes to",
+        "increases the risk of",
+        "is a risk factor for"
+      ],
+      "inverse": null,
+      "category": "causal",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "activates": {
+      "surface_forms": [
+        "activates",
+        "stimulates",
+        "triggers",
+        "brings about activation of"
+      ],
+      "inverse": "activated_by",
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [
+        "activates",
+        "induces"
+      ],
+      "umls_rela_observed": []
+    },
+    "activated_by": {
+      "surface_forms": [
+        "is activated by",
+        "is stimulated by",
+        "is triggered by"
+      ],
+      "inverse": "activates",
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "induces": {
+      "surface_forms": [
+        "induces",
+        "drives",
+        "promotes the formation of",
+        "leads to the induction of"
+      ],
+      "inverse": "induced_by",
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "induced_by": {
+      "surface_forms": [
+        "is induced by",
+        "is driven by"
+      ],
+      "inverse": "induces",
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "upregulates": {
+      "surface_forms": [
+        "upregulates",
+        "increases expression of",
+        "elevates levels of",
+        "enhances expression of"
+      ],
+      "inverse": "upregulated_by",
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [
+        "positively_regulates",
+        "upregulates"
+      ],
+      "umls_rela_observed": []
+    },
+    "upregulated_by": {
+      "surface_forms": [
+        "is upregulated by",
+        "is elevated by"
+      ],
+      "inverse": "upregulates",
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "agonizes": {
+      "surface_forms": [
+        "is an agonist of",
+        "agonizes",
+        "acts as an agonist at"
+      ],
+      "inverse": null,
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [
+        "agonist_of"
+      ],
+      "umls_rela_observed": []
+    },
+    "stimulates": {
+      "surface_forms": [
+        "stimulates",
+        "stimulates the release of",
+        "promotes the release of"
+      ],
+      "inverse": null,
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "inhibits": {
+      "surface_forms": [
+        "inhibits",
+        "blocks",
+        "suppresses",
+        "interferes with",
+        "prevents the action of"
+      ],
+      "inverse": "inhibited_by",
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [
+        "inhibits",
+        "negatively_regulates"
+      ],
+      "umls_rela_observed": []
+    },
+    "inhibited_by": {
+      "surface_forms": [
+        "is inhibited by",
+        "is blocked by",
+        "is suppressed by"
+      ],
+      "inverse": "inhibits",
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "antagonizes": {
+      "surface_forms": [
+        "is an antagonist of",
+        "antagonizes",
+        "acts as an antagonist at"
+      ],
+      "inverse": null,
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [
+        "antagonist_of"
+      ],
+      "umls_rela_observed": []
+    },
+    "downregulates": {
+      "surface_forms": [
+        "downregulates",
+        "decreases expression of",
+        "reduces levels of",
+        "suppresses expression of"
+      ],
+      "inverse": "downregulated_by",
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [
+        "negatively_regulates",
+        "downregulates"
+      ],
+      "umls_rela_observed": []
+    },
+    "downregulated_by": {
+      "surface_forms": [
+        "is downregulated by",
+        "is suppressed by"
+      ],
+      "inverse": "downregulates",
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "degrades": {
+      "surface_forms": [
+        "degrades",
+        "breaks down",
+        "catabolizes"
+      ],
+      "inverse": "degraded_by",
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "degraded_by": {
+      "surface_forms": [
+        "is degraded by",
+        "is broken down by"
+      ],
+      "inverse": "degrades",
+      "category": "mechanistic_negative",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "regulates": {
+      "surface_forms": [
+        "regulates",
+        "controls",
+        "governs"
+      ],
+      "inverse": "regulated_by",
+      "category": "regulatory",
+      "umls_rela_hints": [
+        "regulates"
+      ],
+      "umls_rela_observed": []
+    },
+    "regulated_by": {
+      "surface_forms": [
+        "is regulated by",
+        "is controlled by"
+      ],
+      "inverse": "regulates",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "modulates": {
+      "surface_forms": [
+        "modulates",
+        "modifies the activity of",
+        "fine-tunes"
+      ],
+      "inverse": "modulated_by",
+      "category": "regulatory",
+      "umls_rela_hints": [
+        "modulates"
+      ],
+      "umls_rela_observed": []
+    },
+    "modulated_by": {
+      "surface_forms": [
+        "is modulated by"
+      ],
+      "inverse": "modulates",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "mediates": {
+      "surface_forms": [
+        "mediates",
+        "is responsible for"
+      ],
+      "inverse": "mediated_by",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "mediated_by": {
+      "surface_forms": [
+        "is mediated by",
+        "occurs through"
+      ],
+      "inverse": "mediates",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "phosphorylates": {
+      "surface_forms": [
+        "phosphorylates",
+        "adds a phosphate to"
+      ],
+      "inverse": "phosphorylated_by",
+      "category": "regulatory",
+      "umls_rela_hints": [
+        "phosphorylates"
+      ],
+      "umls_rela_observed": []
+    },
+    "phosphorylated_by": {
+      "surface_forms": [
+        "is phosphorylated by"
+      ],
+      "inverse": "phosphorylates",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "catalyzes": {
+      "surface_forms": [
+        "catalyzes",
+        "catalyses",
+        "facilitates the conversion of"
+      ],
+      "inverse": "catalyzed_by",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "catalyzed_by": {
+      "surface_forms": [
+        "is catalyzed by",
+        "is catalysed by"
+      ],
+      "inverse": "catalyzes",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "binds_to": {
+      "surface_forms": [
+        "binds to",
+        "binds",
+        "is bound to",
+        "associates with",
+        "interacts with"
+      ],
+      "inverse": "bound_by",
+      "category": "structural",
+      "umls_rela_hints": [
+        "binds_to",
+        "interacts_with"
+      ],
+      "umls_rela_observed": []
+    },
+    "bound_by": {
+      "surface_forms": [
+        "is bound by"
+      ],
+      "inverse": "binds_to",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "expressed_in": {
+      "surface_forms": [
+        "is expressed in",
+        "is found in",
+        "is present in"
+      ],
+      "inverse": "expresses",
+      "category": "structural",
+      "umls_rela_hints": [
+        "expressed_in"
+      ],
+      "umls_rela_observed": []
+    },
+    "expresses": {
+      "surface_forms": [
+        "expresses",
+        "produces"
+      ],
+      "inverse": "expressed_in",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "located_in": {
+      "surface_forms": [
+        "is located in",
+        "is found in",
+        "resides in"
+      ],
+      "inverse": "contains",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "contains": {
+      "surface_forms": [
+        "contains",
+        "comprises",
+        "includes"
+      ],
+      "inverse": "located_in",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "secretes": {
+      "surface_forms": [
+        "secretes",
+        "releases"
+      ],
+      "inverse": "secreted_by",
+      "category": "structural",
+      "umls_rela_hints": [
+        "produces"
+      ],
+      "umls_rela_observed": []
+    },
+    "secreted_by": {
+      "surface_forms": [
+        "is secreted by",
+        "is released by"
+      ],
+      "inverse": "secretes",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "transports": {
+      "surface_forms": [
+        "transports",
+        "carries"
+      ],
+      "inverse": "transported_by",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "transported_by": {
+      "surface_forms": [
+        "is transported by",
+        "is carried by"
+      ],
+      "inverse": "transports",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "synthesizes": {
+      "surface_forms": [
+        "synthesizes",
+        "synthesises",
+        "produces"
+      ],
+      "inverse": "synthesized_by",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "synthesized_by": {
+      "surface_forms": [
+        "is synthesized by",
+        "is synthesised by"
+      ],
+      "inverse": "synthesizes",
+      "category": "structural",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "diagnoses": {
+      "surface_forms": [
+        "diagnoses",
+        "is used to diagnose",
+        "establishes the diagnosis of"
+      ],
+      "inverse": "diagnosed_by",
+      "category": "diagnostic",
+      "umls_rela_hints": [
+        "may_diagnose"
+      ],
+      "umls_rela_observed": []
+    },
+    "diagnosed_by": {
+      "surface_forms": [
+        "is diagnosed by",
+        "is identified by",
+        "is established by"
+      ],
+      "inverse": "diagnoses",
+      "category": "diagnostic",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "indicates": {
+      "surface_forms": [
+        "indicates",
+        "suggests",
+        "is indicative of",
+        "is suggestive of"
+      ],
+      "inverse": null,
+      "category": "diagnostic",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "induces_apoptosis_in": {
+      "surface_forms": [
+        "induces apoptosis in",
+        "triggers apoptosis in",
+        "causes apoptosis in",
+        "induces cell death in"
+      ],
+      "inverse": null,
+      "category": "mechanistic_positive",
+      "umls_rela_hints": [
+        "induces_apoptosis_in",
+        "induces"
+      ],
+      "umls_rela_observed": []
+    },
+    "required_for": {
+      "surface_forms": [
+        "is required for",
+        "is necessary for",
+        "is essential for"
+      ],
+      "inverse": "requires",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    },
+    "requires": {
+      "surface_forms": [
+        "requires",
+        "needs",
+        "depends on"
+      ],
+      "inverse": "required_for",
+      "category": "regulatory",
+      "umls_rela_hints": [],
+      "umls_rela_observed": []
+    }
+  },
+  "categories": {
+    "therapeutic": [
+      "contraindicated_in",
+      "indicated_for",
+      "treated_by",
+      "treats"
+    ],
+    "causal": [
+      "caused_by",
+      "causes",
+      "predisposes_to",
+      "prevents"
+    ],
+    "mechanistic_positive": [
+      "activated_by",
+      "activates",
+      "agonizes",
+      "induced_by",
+      "induces",
+      "induces_apoptosis_in",
+      "stimulates",
+      "upregulated_by",
+      "upregulates"
+    ],
+    "mechanistic_negative": [
+      "antagonizes",
+      "degraded_by",
+      "degrades",
+      "downregulated_by",
+      "downregulates",
+      "inhibited_by",
+      "inhibits"
+    ],
+    "regulatory": [
+      "catalyzed_by",
+      "catalyzes",
+      "mediated_by",
+      "mediates",
+      "modulated_by",
+      "modulates",
+      "phosphorylated_by",
+      "phosphorylates",
+      "regulated_by",
+      "regulates",
+      "required_for",
+      "requires"
+    ],
+    "structural": [
+      "binds_to",
+      "bound_by",
+      "contains",
+      "expressed_in",
+      "expresses",
+      "located_in",
+      "secreted_by",
+      "secretes",
+      "synthesized_by",
+      "synthesizes",
+      "transported_by",
+      "transports"
+    ],
+    "diagnostic": [
+      "diagnosed_by",
+      "diagnoses",
+      "indicates"
+    ]
+  }
+}

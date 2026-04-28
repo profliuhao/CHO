@@ -1,0 +1,74 @@
+======================================================================
+CHO Ontology Reasoner Consistency Check
+======================================================================
+Ontology file:  /mnt/user-data/outputs/cho_neurips2026_eandd/ontology/cho.owl
+Run timestamp:  2026-04-25 15:28:54 UTC
+
+Loaded ontology:
+  classes:                41
+  object properties:      4
+  data properties:        4
+  annotation properties:  10
+
+Reasoner pass:
+  HermiT: OK
+
+======================================================================
+DL CONSISTENCY CHECK (HermiT): PASSED
+======================================================================
+
+The ontology is consistent: no class is necessarily empty,
+no contradictions are derivable, and all subclass axioms are
+satisfiable under standard OWL 2 DL semantics.
+
+Top-level taxonomy:
+  ClinicalHallucination
+    +-- EntityHallucination
+          +-- FabricatedEntity
+          +-- MisgradedEntity
+          +-- SubstitutedEntity
+    +-- OmissionHallucination
+          +-- ContextualOmission
+          +-- CriticalOmission
+          +-- ModifierOmission
+    +-- QuantitativeHallucination
+          +-- DirectionError
+          +-- ThresholdViolation
+          +-- UnitTransposition
+          +-- ValueFabrication
+    +-- RelationalHallucination
+          +-- ForbiddenRelation
+          +-- InvertedRelation
+          +-- OvergeneralizedRelation
+    +-- TemporalHallucination
+          +-- CausalChainBreak
+          +-- DurationFabrication
+          +-- SequenceInversion
+  ClinicalDomainFacet
+    +-- DiagnosticFacet
+    +-- LaboratoryFacet
+    +-- PharmacologicalFacet
+    +-- ProceduralFacet
+    +-- TemporalClinicalFacet
+  HarmTier
+    +-- T1_Cosmetic
+    +-- T2_Misleading
+    +-- T3_Actionable
+    +-- T4_LifeThreatening
+  GenerationMechanism
+    +-- CrossPatientContamination
+    +-- KnowledgeBoundaryOverreach
+    +-- NegationDropout
+    +-- SpecificityCollapse
+    +-- SynonymConflation
+    +-- TemplateOverfitting
+    +-- TemporalAnchorDrift
+
+Sample harm-tier axioms (subclass-of restrictions):
+  ForbiddenRelation     SubClassOf hasHarmTier some {T3 or T4}
+  ThresholdViolation    SubClassOf hasHarmTier some {T4}
+  ModifierOmission      SubClassOf hasHarmTier some {T3 or T4}
+  CriticalOmission      SubClassOf hasHarmTier some {T3 or T4}
+  InvertedRelation      SubClassOf hasHarmTier some {T3 or T4}
+  FabricatedEntity      SubClassOf hasHarmTier some {T2 or T3 or T4}
+

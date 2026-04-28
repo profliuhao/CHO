@@ -1,0 +1,111 @@
+{
+  "_metadata": {
+    "description": "Lightweight medical lexicon for the laptop-runnable claim extractor. Pairs surface forms with their canonical concept and UMLS-style semantic type. This is intentionally a small curated vocabulary, not a full UMLS load. For production use, swap in scispacy + QuickUMLS.",
+    "version": "0.1.0"
+  },
+  "drugs": [
+    "metformin", "insulin", "metoprolol", "lisinopril", "atorvastatin",
+    "warfarin", "aspirin", "amoxicillin", "furosemide", "albuterol",
+    "prednisone", "levothyroxine", "amlodipine", "omeprazole", "ibuprofen",
+    "acetaminophen", "ciprofloxacin", "heparin", "sertraline", "haloperidol",
+    "simvastatin", "losartan", "hydrochlorothiazide", "gabapentin",
+    "tramadol", "morphine", "diazepam", "lorazepam", "clopidogrel",
+    "digoxin", "azithromycin", "vancomycin", "ceftriaxone", "epinephrine",
+    "norepinephrine", "dobutamine", "propofol", "midazolam", "fentanyl"
+  ],
+  "diseases": [
+    "diabetes mellitus", "type 1 diabetes mellitus", "type 2 diabetes mellitus",
+    "hypertension", "heart failure", "myocardial infarction", "stroke",
+    "atrial fibrillation", "asthma", "chronic obstructive pulmonary disease",
+    "pneumonia", "sepsis", "septic shock", "acute kidney injury",
+    "chronic kidney disease", "cirrhosis", "hepatitis", "deep vein thrombosis",
+    "pulmonary embolism", "gastroesophageal reflux disease", "peptic ulcer disease",
+    "hyperlipidemia", "hypercholesterolemia", "hypothyroidism", "hyperthyroidism",
+    "rheumatoid arthritis", "osteoarthritis", "lupus", "anemia",
+    "atherosclerosis", "coronary artery disease", "cardiomyopathy",
+    "endocarditis", "meningitis", "encephalitis", "tuberculosis",
+    "alzheimer disease", "parkinson disease", "epilepsy", "seizure"
+  ],
+  "mental_disorders": [
+    "depression", "major depressive disorder", "anxiety", "schizophrenia",
+    "bipolar disorder", "obsessive-compulsive disorder", "post-traumatic stress disorder",
+    "panic disorder", "social anxiety disorder", "delirium"
+  ],
+  "symptoms": [
+    "fever", "pain", "headache", "fatigue", "nausea", "vomiting",
+    "diarrhea", "constipation", "shortness of breath", "chest pain",
+    "dizziness", "dyspnea", "cough", "wheezing", "rash", "edema",
+    "syncope", "palpitations", "weakness", "weight loss", "weight gain",
+    "bleeding", "bruising", "swelling", "dehydration", "lactic acidosis"
+  ],
+  "infections_and_conditions": [
+    "streptococcal pharyngitis", "urinary tract infection", "bacterial infection",
+    "viral infection", "otitis media", "h. pylori infection",
+    "exercise-induced bronchoconstriction"
+  ],
+  "lab_findings": [
+    "elevated troponin", "elevated potassium", "elevated creatinine",
+    "elevated white blood cell count", "elevated bun", "elevated glucose",
+    "elevated lactate", "elevated alt", "elevated ast", "elevated inr",
+    "hyperkalemia", "hypokalemia", "hyponatremia", "hypernatremia",
+    "hyperglycemia", "hypoglycemia", "anemia", "thrombocytopenia",
+    "leukocytosis", "leukopenia", "acidosis", "alkalosis"
+  ],
+  "anatomy": [
+    "heart", "lung", "kidney", "liver", "brain", "stomach", "intestine",
+    "colon", "spleen", "pancreas", "bladder", "thyroid", "adrenal gland"
+  ],
+  "procedures": [
+    "echocardiogram", "ekg", "ct scan", "mri", "x-ray", "blood test",
+    "intubation", "extubation", "surgery", "dialysis", "endoscopy",
+    "colonoscopy", "biopsy", "catheterization"
+  ],
+  "treats_relations": [
+    "treats", "is used to treat", "is indicated for", "is prescribed for",
+    "is given for", "manages", "helps with", "is used for"
+  ],
+  "causes_relations": [
+    "causes", "leads to", "results in", "induces", "produces", "gives rise to"
+  ],
+  "negation_cues": [
+    "no", "not", "never", "without", "denies", "denied", "absent",
+    "negative for", "no evidence of", "free of", "ruled out", "rule out",
+    "unlikely", "doubt", "no signs of", "non-", "neither"
+  ],
+  "drug_aliases": {
+    "tylenol": "acetaminophen",
+    "motrin": "ibuprofen",
+    "advil": "ibuprofen",
+    "ventolin": "albuterol",
+    "synthroid": "levothyroxine",
+    "norvasc": "amlodipine",
+    "prilosec": "omeprazole",
+    "prozac": "fluoxetine",
+    "zoloft": "sertraline",
+    "lasix": "furosemide",
+    "coumadin": "warfarin",
+    "lipitor": "atorvastatin",
+    "zocor": "simvastatin",
+    "haldol": "haloperidol"
+  },
+  "disease_aliases": {
+    "dm": "diabetes mellitus",
+    "t1dm": "type 1 diabetes mellitus",
+    "t2dm": "type 2 diabetes mellitus",
+    "htn": "hypertension",
+    "chf": "heart failure",
+    "mi": "myocardial infarction",
+    "afib": "atrial fibrillation",
+    "copd": "chronic obstructive pulmonary disease",
+    "ckd": "chronic kidney disease",
+    "aki": "acute kidney injury",
+    "dvt": "deep vein thrombosis",
+    "pe": "pulmonary embolism",
+    "gerd": "gastroesophageal reflux disease",
+    "pud": "peptic ulcer disease",
+    "ra": "rheumatoid arthritis",
+    "oa": "osteoarthritis",
+    "cad": "coronary artery disease",
+    "tb": "tuberculosis"
+  }
+}

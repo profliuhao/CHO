@@ -1,0 +1,65 @@
+# Python bytecode and packaging
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# UMLS / external-API caches (regenerated from UMLS_API_KEY)
+evaluation/extraction/.umls_cache/
+**/.umls_cache/
+
+# Evaluation result outputs (per repo policy: kept out of public repo for now)
+evaluation/results/
+
+# IDE / editor cruft
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+**/credentials.json
+
+# Runtime logs
+logs/
+*.log
+
+# Jupyter checkpoints if any
+.ipynb_checkpoints/
+
+# UMLS-derived resources (rebuilt from UMLS_API_KEY via the build scripts).
+# Excluded per UMLS license posture; the seed medical_lexicon.json is kept.
+evaluation/extraction/medical_lexicon_umls.json
+ontology/data/contraindications.json
+
+# Temp / scratch
+tmp/
+*.tmp
+
+# Manuscript file
+*.tex
+*.bib
+hallucination_ontology_clinical_ai.md
+
+# setup script
+setup_git.sh
+

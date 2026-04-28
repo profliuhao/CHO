@@ -1,0 +1,222 @@
+{
+  "_metadata": {
+    "description": "Lightweight UMLS-style semantic type hierarchy for the Ontological Drift Index (ODI). The full UMLS Semantic Network has 127 types; this captures the major branches needed to detect drift across semantic-type boundaries (e.g., Symptom -> Disease).",
+    "source_note": "Derived from UMLS Semantic Network. See https://www.nlm.nih.gov/research/umls/META3_current_semantic_types.html",
+    "version": "0.1.0"
+  },
+  "semantic_types": {
+    "Entity": {
+      "tui": "T071",
+      "parent": null,
+      "depth": 0
+    },
+    "PhysicalObject": {
+      "tui": "T072",
+      "parent": "Entity",
+      "depth": 1
+    },
+    "AnatomicalStructure": {
+      "tui": "T017",
+      "parent": "PhysicalObject",
+      "depth": 2
+    },
+    "BodyPart": {
+      "tui": "T023",
+      "parent": "AnatomicalStructure",
+      "depth": 3
+    },
+    "Organ": {
+      "tui": "T023",
+      "parent": "BodyPart",
+      "depth": 4
+    },
+    "Tissue": {
+      "tui": "T024",
+      "parent": "AnatomicalStructure",
+      "depth": 3
+    },
+    "Cell": {
+      "tui": "T025",
+      "parent": "AnatomicalStructure",
+      "depth": 3
+    },
+    "Substance": {
+      "tui": "T167",
+      "parent": "PhysicalObject",
+      "depth": 2
+    },
+    "ChemicalOrDrug": {
+      "tui": "T103",
+      "parent": "Substance",
+      "depth": 3
+    },
+    "PharmacologicSubstance": {
+      "tui": "T121",
+      "parent": "ChemicalOrDrug",
+      "depth": 4
+    },
+    "AntibioticOrAntimicrobial": {
+      "tui": "T195",
+      "parent": "PharmacologicSubstance",
+      "depth": 5
+    },
+    "BiologicallyActiveSubstance": {
+      "tui": "T123",
+      "parent": "ChemicalOrDrug",
+      "depth": 4
+    },
+    "Hormone": {
+      "tui": "T125",
+      "parent": "BiologicallyActiveSubstance",
+      "depth": 5
+    },
+    "ConceptualEntity": {
+      "tui": "T077",
+      "parent": "Entity",
+      "depth": 1
+    },
+    "Finding": {
+      "tui": "T033",
+      "parent": "ConceptualEntity",
+      "depth": 2
+    },
+    "SignOrSymptom": {
+      "tui": "T184",
+      "parent": "Finding",
+      "depth": 3
+    },
+    "Symptom": {
+      "tui": "T184",
+      "parent": "SignOrSymptom",
+      "depth": 4
+    },
+    "Sign": {
+      "tui": "T184",
+      "parent": "SignOrSymptom",
+      "depth": 4
+    },
+    "LaboratoryFinding": {
+      "tui": "T034",
+      "parent": "Finding",
+      "depth": 3
+    },
+    "DiseaseOrSyndrome": {
+      "tui": "T047",
+      "parent": "ConceptualEntity",
+      "depth": 2
+    },
+    "Disease": {
+      "tui": "T047",
+      "parent": "DiseaseOrSyndrome",
+      "depth": 3
+    },
+    "MentalDisorder": {
+      "tui": "T048",
+      "parent": "DiseaseOrSyndrome",
+      "depth": 3
+    },
+    "Neoplasm": {
+      "tui": "T191",
+      "parent": "DiseaseOrSyndrome",
+      "depth": 3
+    },
+    "InjuryOrPoisoning": {
+      "tui": "T037",
+      "parent": "ConceptualEntity",
+      "depth": 2
+    },
+    "Procedure": {
+      "tui": "T060",
+      "parent": "ConceptualEntity",
+      "depth": 2
+    },
+    "DiagnosticProcedure": {
+      "tui": "T060",
+      "parent": "Procedure",
+      "depth": 3
+    },
+    "TherapeuticProcedure": {
+      "tui": "T061",
+      "parent": "Procedure",
+      "depth": 3
+    },
+    "BodyFunction": {
+      "tui": "T039",
+      "parent": "ConceptualEntity",
+      "depth": 2
+    },
+    "PhysiologicFunction": {
+      "tui": "T040",
+      "parent": "BodyFunction",
+      "depth": 3
+    },
+    "PathologicFunction": {
+      "tui": "T046",
+      "parent": "BodyFunction",
+      "depth": 3
+    }
+  },
+  "concept_to_semtype": {
+    "diabetes mellitus": "Disease",
+    "type 2 diabetes mellitus": "Disease",
+    "type 1 diabetes mellitus": "Disease",
+    "hypertension": "Disease",
+    "heart failure": "Disease",
+    "myocardial infarction": "Disease",
+    "asthma": "Disease",
+    "pneumonia": "Disease",
+    "stroke": "Disease",
+    "atrial fibrillation": "Disease",
+    "depression": "MentalDisorder",
+    "major depressive disorder": "MentalDisorder",
+    "schizophrenia": "MentalDisorder",
+    "anxiety": "MentalDisorder",
+    "fever": "SignOrSymptom",
+    "pain": "SignOrSymptom",
+    "headache": "SignOrSymptom",
+    "fatigue": "SignOrSymptom",
+    "nausea": "SignOrSymptom",
+    "shortness of breath": "SignOrSymptom",
+    "chest pain": "SignOrSymptom",
+    "dizziness": "SignOrSymptom",
+    "elevated troponin": "LaboratoryFinding",
+    "elevated potassium": "LaboratoryFinding",
+    "hyperkalemia": "LaboratoryFinding",
+    "hyponatremia": "LaboratoryFinding",
+    "hyperglycemia": "LaboratoryFinding",
+    "hypoglycemia": "LaboratoryFinding",
+    "metformin": "PharmacologicSubstance",
+    "insulin": "Hormone",
+    "metoprolol": "PharmacologicSubstance",
+    "lisinopril": "PharmacologicSubstance",
+    "atorvastatin": "PharmacologicSubstance",
+    "warfarin": "PharmacologicSubstance",
+    "aspirin": "PharmacologicSubstance",
+    "amoxicillin": "AntibioticOrAntimicrobial",
+    "ciprofloxacin": "AntibioticOrAntimicrobial",
+    "furosemide": "PharmacologicSubstance",
+    "albuterol": "PharmacologicSubstance",
+    "prednisone": "PharmacologicSubstance",
+    "levothyroxine": "Hormone",
+    "amlodipine": "PharmacologicSubstance",
+    "omeprazole": "PharmacologicSubstance",
+    "ibuprofen": "PharmacologicSubstance",
+    "acetaminophen": "PharmacologicSubstance",
+    "heparin": "PharmacologicSubstance",
+    "sertraline": "PharmacologicSubstance",
+    "haloperidol": "PharmacologicSubstance",
+    "heart": "Organ",
+    "lung": "Organ",
+    "kidney": "Organ",
+    "liver": "Organ",
+    "brain": "Organ",
+    "echocardiogram": "DiagnosticProcedure",
+    "ekg": "DiagnosticProcedure",
+    "ct scan": "DiagnosticProcedure",
+    "mri": "DiagnosticProcedure",
+    "blood test": "DiagnosticProcedure",
+    "intubation": "TherapeuticProcedure",
+    "surgery": "TherapeuticProcedure",
+    "dialysis": "TherapeuticProcedure"
+  }
+}
