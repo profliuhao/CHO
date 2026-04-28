@@ -137,4 +137,4 @@ Code: MIT (open an issue if you'd prefer a different choice).
 
 ## Citation
 
-Citation forthcoming once the paper is accepted; see `main.tex` for the current draft.
+Citation forthcoming once the paper is accepted.
