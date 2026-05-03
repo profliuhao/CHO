@@ -53,7 +53,6 @@ cho_test/
 ├── mcp_server/
 │   ├── cho_tools.py                       Six CHO tools (in-process callable)
 │   └── server.py                          MCP stdio server wrapping the tools
-├── main.tex, references.bib               Paper source
 ├── IMPLEMENTATION_PLAN.md                 Full design rationale, status snapshot, runbook
 ├── requirements.txt
 └── README.md                              this file
