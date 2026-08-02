@@ -124,7 +124,7 @@ def gen_threshold_violation() -> list[dict]:
     data = json.loads(RANGES_PATH.read_text())
     labs = data.get("labs", {})
     for lab_name, info in labs.items():
-        unit = info.get("unit", "")
+        unit = info.get("unit") or info.get("units", "")
         # Above plausible_max
         high = info.get("plausible_max", 0) * 1.5 + 1
         out.append({
@@ -314,7 +314,7 @@ def gen_more_threshold_violations() -> list[dict]:
     labs = data.get("labs", {})
     out = []
     for lab_name, info in labs.items():
-        unit = info.get("unit", "")
+        unit = info.get("unit") or info.get("units", "")
         # Two extreme-high values
         high1 = info.get("plausible_max", 0) * 2 + 5
         high2 = info.get("plausible_max", 0) * 4 + 20

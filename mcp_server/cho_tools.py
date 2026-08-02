@@ -268,9 +268,9 @@ def get_lab_plausibility(lab: str, value: float,
 
     pmin = info["plausible_min"]
     pmax = info["plausible_max"]
-    nmin = info.get("normal_min", pmin)
-    nmax = info.get("normal_max", pmax)
-    bounds_unit = info.get("unit", unit)
+    nmin = info.get("normal_min", info.get("reference_low", pmin))
+    nmax = info.get("normal_max", info.get("reference_high", pmax))
+    bounds_unit = info.get("unit") or info.get("units") or unit
 
     if value < pmin or value > pmax:
         verdict = "out_of_range"

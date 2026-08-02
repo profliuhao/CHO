@@ -63,3 +63,29 @@ hallucination_ontology_clinical_ai.md
 # setup script
 setup_git.sh
 
+
+# Unrelated project material that lives in this working tree but is not part of CHO.
+# Kept out of history deliberately: this repo is intended for eventual public release,
+# and git history cannot easily shed large or confidential files once committed.
+Career2025nsf/
+Career2026nsf/
+eri2026nsf/
+backup/
+logs/
+.nature-skills/
+
+# Confidential peer review
+Neurips 2026 Reviews.md
+rebuttal/
+
+# LaTeX build artifacts
+psb_submission/build/
+psb_submission/debug_build/
+psb_submission/template_build/
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
