@@ -2,7 +2,7 @@
 
 A formal evaluation framework for clinical hallucinations in large language models, grounded in an OWL 2 DL ontology with reasoner-validated axioms.
 
-This repository contains the artifact for the NeurIPS 2026 Evaluations & Datasets Track submission *CHO: An Ontology-Grounded Evaluation Framework for Clinical Hallucinations in Large Language Models*.
+This repository contains the artifact for the a paper submission *CHO: An Ontology-Grounded Evaluation Framework for Clinical Hallucinations in Large Language Models*.
 
 ## What's here
 
